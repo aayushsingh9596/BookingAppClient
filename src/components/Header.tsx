@@ -6,8 +6,8 @@ const Header = () => {
   const { isLoggedIn } = useAppContext();
 
   return (
-    <div className="bg-blue-800 py-6 px-1">
-      <div className="container mx-auto flex justify-between">
+    <div className="bg-blue-800 py-6">
+      <div className="container mx-auto flex justify-between px-1">
         <span className="text-3xl text-white font-bold tracking-tight">
           <Link to="/">BookingApp</Link>
         </span>
