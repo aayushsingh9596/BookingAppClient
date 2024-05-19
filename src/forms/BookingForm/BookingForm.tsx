@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { UserType } from "../../../../backend/shared/types";
+import { UserType } from "../../Types/types";
 
 type Props = {
   loggedInUser: UserType;
