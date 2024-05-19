@@ -14,7 +14,7 @@ function App() {
   const { isLoggedIn } = useAppContext();
 
   return (
-    <div className="p-2">
+    <div className="p-1">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout>{<p>Home</p>}</Layout>} />
