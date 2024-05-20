@@ -91,6 +91,9 @@ export const getUser = async (): Promise<UserType> => {
 };
 
 export const addHotel = async (hotelFormData: FormData) => {
+
+  console.log(hotelFormData);
+
   const response = await fetch("https://bookingappserver-635a.onrender.com/api/hotel/addHotel", {
     method: "POST",
     credentials: "include",
