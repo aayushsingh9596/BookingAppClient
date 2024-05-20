@@ -48,13 +48,14 @@ export const signIn = async (formData: SignInFormData) => {
 };
 
 export const signOut = async () => {
+
+  console.log("SignOut Called before api call");
   const response = await fetch("https://bookingappserver-635a.onrender.com/api/auth/signOut", {
     method: "POST",
     credentials: "include",
   });
 
   const responseBody = await response.json();
-
   console.log(responseBody);
 
   if (!response.ok) {
